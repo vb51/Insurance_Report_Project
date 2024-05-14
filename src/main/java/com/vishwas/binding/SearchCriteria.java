@@ -2,6 +2,8 @@ package com.vishwas.binding;
 
 import java.time.LocalDate;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 public class SearchCriteria {
 	// These are the fields which are available in UI
 	// to map the data this class is created only for form data mapping
@@ -62,10 +64,10 @@ public class SearchCriteria {
 		this.planendDate = planendDate;
 	}
 
-
+@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private LocalDate planstartDate;
 	
-	
+@DateTimeFormat(pattern = "yyyy-MM-dd")	
 	private LocalDate planendDate;
 	
 	
