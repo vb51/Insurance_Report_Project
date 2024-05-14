@@ -21,14 +21,12 @@ public class CitizenPlanServiceImpl implements CitizenPlanService {
 	
 	@Override
 	public List<String> getPlanNames() {
-		
-		return null;
+		return repo.getPlanNames();
 	}
 
 	@Override
 	public List<String> getPlanStatus() {
-		
-		return null;
+		return repo.getPlanStatus();
 	}
 
 	@Override
